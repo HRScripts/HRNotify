@@ -13,5 +13,3 @@ client_script 'client.lua'
 files {
     'html/*.*'
 }
-
-lua54 'yes'
