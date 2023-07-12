@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Agdasima&display=swap');
+
+.notifications {
+    position: fixed;
+    top: 100px;
+    right: 10px;
+    z-index: 9999;
+}
+
+.notification {
+    display: flex;
+    position: relative;
+    height: 60px;
+    background: #1f242dda;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transform: skewY(-3deg);
+    margin-top: 10px;
+    font-family: 'Agdasima', sans-serif;
+    color: #ffffff;
+    padding: 5px 10px;
+    animation: 1s;
+    overflow: hidden;
+    transition: transform 0.5s ease-in-out;
+    white-space: nowrap;
+}
+
+
+.notification::before {
+    content: "\f058";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    vertical-align: middle;
+    font-family: 'Font Awesome 6 Free';
+}
+
+.notification.success::before {
+    content: "\f058";
+    border-right: 2.5px solid green;
+    color: green;
+    font-weight: 600;
+    font-family: 'Font Awesome 6 Free';
+}
+
+.notification.info::before {
+    content: "\f05a";
+    border-right: 2.5px solid rgb(0, 119, 255) ;
+    color: rgb(0, 119, 255);
+    font-weight: 600;
+    font-family: 'Font Awesome 6 Free';
+}
+
+.notification.error::before {
+    content: "\f1e2";
+    border-right: 2.5px solid darkred;
+    color: darkred;
+    font-weight: 600;
+    font-family: 'Font Awesome 6 Free';
+}
+
+.notification.warning::before {
+    content: "\f071";
+    border-right: 2.5px solid yellow;
+    color: yellow;
+    font-weight: 600;
+    font-family: 'Font Awesome 6 Free';
+}
+
+
+
+.success-border {
+    border-right: 3px solid green;
+    border-bottom: 3px solid green;
+    border-left: 3px solid green;
+  }
+  
+  .info-border {
+    border-right: 3px solid rgb(0, 119, 255);
+    border-bottom: 3px solid rgb(0, 119, 255);
+    border-left: 3px solid rgb(0, 119, 255);
+  }
+  
+  .error-border {
+    border-right: 3px solid darkred;
+    border-bottom: 3px solid darkred;
+    border-left: 3px solid darkred;
+  }
+  
+  .warning-border {
+    border-right: 3px solid yellow;
+    border-bottom: 3px solid yellow;
+    border-left: 3px solid yellow;
+  }
+  
+  .slide.right {
+    transform: translateX(100%);
+  }
+  
+  .slide.left {
+    transform: translateX(-100%);
+  }
+  
+  @keyframes slideRight {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+  
+  @keyframes slideLeft {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
