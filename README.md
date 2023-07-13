@@ -1,5 +1,5 @@
 # HRNotify
-Notification resource made by HRScripts | hristiyan_raykov#0 and astronomichniq#0 for HRScripts scripts.
+Notification resource made by HRScripts | hristiyan_raykov#0 and astronomichniq#0 for HRScripts resources.
 
 ## Installation
 - Put `HRNotify` in your `resources` folder
