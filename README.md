@@ -1,6 +1,8 @@
 # HRNotify
 Standalone notification resource made by HRScripts | hristiyan_raykov#0 and astronomichniq#0 for HRScripts resources.
 
+Preview: https://youtu.be/Zc9DOo_HTx
+
 ## Installation
 - Put `HRNotify` in your `resources` folder
 - Put `start HRNotify` in your `server.cfg` file
