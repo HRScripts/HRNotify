@@ -1,7 +1,7 @@
 # HRNotify
 Standalone notification resource made by HRScripts | hristiyan_raykov#0 and astronomichniq#0 for HRScripts resources.
 
-Preview: https://youtu.be/Zc9DOo_HTx
+Preview: [https://youtube.com/HRScripts/HRNotify](https://www.youtube.com/watch?v=Zc9DOo_HTxI&ab_channel=HRScriptsDevelopement)
 
 ## Installation
 - Put `HRNotify` in your `resources` folder
