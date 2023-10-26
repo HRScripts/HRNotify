@@ -2,7 +2,7 @@
 Notification resource made by HRScripts Development for HRScripts resources.
 See documentation: https://hrscripts.gitbook.io/hrscripts-documentation
 
-
+https://github.com/HRScripts/HRNotify/assets/138999193/47e58fff-f9fa-48d2-9aa0-6ada1344a3cd
 
 ## Installation
 - Put `HRNotify` in your `resources` folder
