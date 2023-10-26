@@ -1,99 +1,132 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 .notifications {
     position: fixed;
-    top: 100px;
-    right: 10px;
     z-index: 9999;
 }
 
 .notification {
-    display: flex;
-    position: relative;
-    height: 60px;
-    background: #1f242dda;
-    border-radius: 10px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    transform: skewY(-3deg);
-    margin-top: 10px;
-    font-family: 'Noto Sans SC', sans-serif;
-    color: #ffffff;
-    padding: 5px 10px;
-    animation: 1s;
-    overflow: hidden;
-    transition: transform 0.5s ease-in-out;
-    white-space: nowrap;
+  display: flex;
+  position: relative;
+  height: 60px;
+  background: #1f242d;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 10px;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+  padding: 5px 10px;
+  overflow: hidden;
+  transition: transform 0.5s ease-in-out;
+  white-space: nowrap;
 }
-
 
 .notification::before {
-    content: "\f058";
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    margin-right: 5px;
-    vertical-align: middle;
-    font-family: 'Font Awesome 6 Free';
+  content: "\f058";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  vertical-align: middle;
+  font-family: 'Font Awesome 6 Free';
 }
+
+.notification-type {
+  position: absolute;
+  top: 10%;
+  left: -35%; 
+  right: 0;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: 'Noto Sans SC', sans-serif;
+  text-align: center;
+  padding: 5px;
+  color: white;
+  border-radius: 10px 10px 0 0;
+}
+
+.notification.success .notification-type {
+  left: -43%; 
+}
+
+.notification.warning .notification-type {
+  left: -41%; 
+}
+
+.notification.error .notification-type {
+  right: 2.2rem;
+}
+
+.notification.info .notification-type {
+  right: 3.2rem;
+}
+
+.notification-text {
+  position: relative;
+  top: 25%;
+  transform: translateY(-50%);
+  margin-left: 0.5rem;
+}
+
 
 .notification.success::before {
     content: "\f058";
-    border-right: 2.5px solid green;
     color: green;
-    font-weight: 600;
+    font-size: 25px;
+    margin-top: -0.3rem;
+    margin-left: -0.1rem;
+    font-weight: 900;
     font-family: 'Font Awesome 6 Free';
 }
 
 .notification.info::before {
     content: "\f05a";
-    border-right: 2.5px solid rgb(0, 119, 255) ;
     color: rgb(0, 119, 255);
-    font-weight: 600;
+    font-size: 25px;
+    margin-top: -0.3rem;
+    margin-left: -0.1rem;
+    font-weight: 900;
     font-family: 'Font Awesome 6 Free';
 }
 
 .notification.error::before {
     content: "\f1e2";
-    border-right: 2.5px solid darkred;
     color: darkred;
-    font-weight: 600;
+    font-size: 25px;
+    margin-top: -0.3rem;
+    margin-left: -0.1rem;
+    font-weight: 900;
     font-family: 'Font Awesome 6 Free';
 }
 
 .notification.warning::before {
     content: "\f071";
-    border-right: 2.5px solid yellow;
     color: yellow;
-    font-weight: 600;
+    font-size: 25px;
+    margin-top: -0.3rem;
+    margin-left: -0.1rem;
+    font-weight: 900;
     font-family: 'Font Awesome 6 Free';
 }
 
 
 
 .success-border {
-    border-right: 3px solid green;
-    border-bottom: 3px solid green;
-    border-left: 3px solid green;
-  }
+  box-shadow: 0 0 5px 2px #87A96B;
+}
   
   .info-border {
-    border-right: 3px solid rgb(0, 119, 255);
-    border-bottom: 3px solid rgb(0, 119, 255);
-    border-left: 3px solid rgb(0, 119, 255);
+    box-shadow: 0 0 5px 5px #002244;
   }
   
   .error-border {
-    border-right: 3px solid darkred;
-    border-bottom: 3px solid darkred;
-    border-left: 3px solid darkred;
+    box-shadow: 0 0 5px 2px #3B0000;
   }
   
   .warning-border {
-    border-right: 3px solid yellow;
-    border-bottom: 3px solid yellow;
-    border-left: 3px solid yellow;
+    box-shadow: 0 0 5px 2px #FFC72C; 
   }
   
   .slide.right {
@@ -121,3 +154,5 @@
       transform: translateX(-100%);
     }
   }
+
+ 

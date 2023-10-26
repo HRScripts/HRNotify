@@ -1,15 +1,16 @@
-# HRNotify
-Standalone notification resource made by HRScripts | hristiyan_raykov#0 and astronomichniq#0 for HRScripts resources.
+# HRNotify V2
+Notification resource made by HRScripts Development for HRScripts resources.
+See documentation: https://hrscripts.gitbook.io/hrscripts-documentation
 
-Preview: [https://youtube.com/HRScripts/HRNotify](https://www.youtube.com/watch?v=Zc9DOo_HTxI&ab_channel=HRScriptsDevelopement)
+<iframe width="560" height="315" src="https://youtube.com/@HRScripts_Dev/HRNotifyV2"></iframe>
 
 ## Installation
 - Put `HRNotify` in your `resources` folder
 - Put `start HRNotify` in your `server.cfg` file
-- Start resource & enjoy
+- Start the script
 
 ## Client Application
-- `Notify` export sending message in custom UI
+- `Notify` sending message in custom UI
 - Using export example:
 ```lua
 RegisterCommand('success', function()
@@ -21,5 +22,5 @@ RegisterCommand('success', function()
 end, false)
 ```
 
-## Event
-- `HRNotify:Notify` same function like `Notify` export
+## Client Event
+- `HR:Notify` same as `Notify` client application
