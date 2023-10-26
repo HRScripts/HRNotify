@@ -2,7 +2,7 @@
 Notification resource made by HRScripts Development for HRScripts resources.
 See documentation: https://hrscripts.gitbook.io/hrscripts-documentation
 
-<iframe width="560" height="315" src="https://youtube.com/@HRScripts_Dev/HRNotifyV2"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Zc9DOo_HTxI?si=QOQ44KXZ9cgfnMxo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## Installation
 - Put `HRNotify` in your `resources` folder
