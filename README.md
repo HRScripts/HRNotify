@@ -1,12 +1,13 @@
 # HRNotify V2
 Notification resource made by HRScripts Development for HRScripts resources.
-See documentation: https://hrscripts.gitbook.io/hrscripts-documentation
+See the documentation: https://hrscripts.gitbook.io/hrscripts-documentation
 
-Preview: SOON
+Preview: https://youtu.be/N1-AtBcEf4I?si=Get1BlD-E4vFhALX
 
 ## Installation
-- Put `HRNotify` in your `resources` folder
-- Put `start HRNotify` in your `server.cfg` file
+- Download `HRNotify` & move it to your resources folder
+- Configure it from `config.lua` file
+- Write start `HRNotify` in your `server.cfg` file
 - Start the script
 
 ## Client Application
